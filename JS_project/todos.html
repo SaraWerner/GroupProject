@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="todos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="todos.js"></script>
+</head>
+
+<body onload="load()">
+    <h1>todos</h1>
+    <div class="wrapperDiv">
+        <div class="Pagehead">
+            <li onclick="allDone()" class="fa fa-angle-down hero"></li>
+            <input type="text" class="fill_in_todo" placeholder="What needs to be done?" value="" onKeyPress="addTodo(event, this)">
+        </div>
+        <div class="mainDiv">
+            <div id="todos_list"></div>
+            <div class="buttons">
+                <span class="todo_counter">
+                        <span class="amount_todos">0</span>
+                <span class="items">item</span>
+                <span class="left">left</span>
+                </span>
+                <button class="all btn btn1" onclick="showAll()"> All</button>
+                <button class="active btn btn1" onclick="showActive()">Active</button>
+                <button class="completed btn btn1" onclick="showCompleted()">Completed</button>
+                <a class="clear btn" onclick="clearDones()">Clear completed</a>
+            </div>
+        </div>
+    </div>
+    <div class="end1"></div>
+    <div class="end2"></div>
+</body>
+
+</html>
