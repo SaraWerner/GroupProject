@@ -5,7 +5,7 @@ header {
     background-size: 38px;
     background-repeat: repeat-x;
     width: 100%;
-    background-color: white;
+    /*background-color: white;*/
     z-index: 3;
 }
 
