@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main_menu">
+                <li onmouseover="both()"><button class="sign">SIGN UP</button></li>
+                <li onmouseover="both()"><button class="log">LOG IN</button></li>
+                <li onmouseover="both()" class="header-links"><a href="#CONACT" class="btn-up">CONACT</a></li>
+                <li onmouseover="both()" class="header-links"><a href="#MANAGED" class="btn-up header-links">MANAGED</a></li>
+                <li onmouseover="onlink('mn2')" class="fa fa-angle-down header-links hero"></li>
+                <li class="m2 header-links" onmouseover="onlink('mn2')"><a href="#RESOURCES" class="btn-up header-links">RESOURCES</a></li>
+                <li onmouseover="onlink('mn1')" class="fa fa-angle-down header-links hero"></li>
+                <li class="m1 header-links" onmouseover="onlink('mn1')"><a href="#FEAUTERS" class="btn-up header-links">FEAUTERS</a>
+                </li>
+                <li onmouseover="both()" class="header-links"><a href="#CUSTOMERS" class="btn-up header-links">CUSTOMERS</a></li>
+                <li onmouseover="both()" class="header-links"><a href="#PRICING" class="btn-up header-links">PRICING</a></li>
+            </ul>
+        </nav>
+        <ul id="mn1" class="menu1 menues" onmouseleave="leave('mn1')">
+            <li>Sending Email</li>
+            <li>Inbound Routing</li>
+            <li>Logs</li>
+            <li>Reports</li>
+            <li>Email Validation</li>
+            <li>Deliverability</li>
+        </ul>
+        <ul id="mn2" class="menu2 menues" onmouseleave="leave('mn2')">
+            <li>Docs</li>
+            <li>Guide</li>
+            <li>Blog</li>
+        </ul>
+        <img src="images/mailgun.svg">
+    </header>
+    <section>
+        <div id="section_txt">
+            <h1>The Email Service For Developers</h1>
+            <div id="stxt">
+                <h2>Powerful APIs that enable you to send,<br> receive and track email effortessly.</h2>
+                <br><br>
+                <h3> 10,000 emails free every month</h3>
+                <br><br>
+                <button class="btn-try">Try Mailgun Now</button>
+                <br><br><br><br><br>
+                <button class="btn-managed">Managed Service For Big Senders</button>
+            </div>
+        </div>
+        <div id="tabs"></div>
+    </section>
+    <div id="teams">
+        <br>
+        <br>
+        <p id="team_txt">Trusted by smart software development teams</p>
+        <br>
+        <div id="images">
+            <img src="images/c-github.png">
+            <img src="images/c-lyft.png">
+            <img src="images/shopify-logo.png">
+            <img src="images/c-slack.png">
+            <img src="images/c-stripe.png">
+        </div>
+    </div>
+    <footer class="ftr">
+        <nav id="nav_links">
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Report">Report Spam</a></li>
+            <li><a href="#Privacy">Privacy Policy</a></li>
+            <li><a href="#Terms">Terms Of Service</a></li>
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#Help">Help</a></li>
+            <li><a href="#Jobs">Jobs</a></li>
+        </nav>
+        <nav id="images2">
+            <li>
+                <a href="#Jobs"></a><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+            <li>
+                <a href="#Help"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#Team"></a><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+        </nav>
+        <p id="saved">&#9400 2017 MailGun Technologies, Inc </p>
+    </footer>
+
+</body>
+
+</html>
+<script>
+    function leave(id) {
+        document.getElementById(id).style.display = "none";
+    }
+
+    function both() {
+        document.getElementById("mn2").style.display = "none";
+        document.getElementById("mn1").style.display = "none";
+    }
+
+    function onlink(id) {
+        both();
+        document.getElementById(id).style.display = "block";
+    }
+</script>

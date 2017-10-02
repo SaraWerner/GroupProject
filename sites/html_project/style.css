@@ -1,0 +1,359 @@
+header {
+    height: 56px;
+    position: fixed;
+    background-image: url("images/envelope-border.png");
+    background-size: 38px;
+    background-repeat: repeat-x;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+}
+
+h1,
+h3 {
+    font-family: 'Titillium Web', Lato, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+.main_menu li {
+    margin-left: 20px;
+    float: right;
+    color: #7590c9;
+    font-size: 13px;
+    height: 10px;
+}
+
+.hero {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.hero:hover {
+    color: #eb284f;
+}
+
+.header-links {
+    font-family: 'Titillium Web', Lato, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    margin-top: 7px;
+    columns: #6188cc;
+}
+
+header ul {
+    margin-right: 250px;
+}
+
+header img {
+    width: 100px;
+    height: 35px;
+    display: block;
+    margin-left: 245px;
+    position: relative;
+}
+
+.sign {
+    background-color: #eb284f;
+    color: white;
+    width: 80px;
+    height: 32px;
+    margin-left: 3px;
+    border: 1px solid #eb284f;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.sign:hover {
+    text-decoration: none;
+    color: white;
+    font-style: bold;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.log {
+    color: #6682c2;
+    width: 80px;
+    height: 32px;
+    margin-left: 3px;
+    border: 1px solid #6682c2;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 500;
+    padding: 15px 25px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: inherit;
+}
+
+.log:hover {
+    color: white;
+    background-color: #6682c2;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.ftr {
+    height: 260px;
+    background-color: #182848;
+}
+
+footer li {
+    color: white;
+    font-size: medium;
+    float: right;
+}
+
+#teams {
+    height: 420px;
+}
+
+#saved {
+    font-family: Arial;
+    font-size: 17px;
+    color: white;
+    width: 315px;
+    margin-left: 776px;
+    text-align: center;
+}
+
+#team_txt {
+    text-align: center;
+    margin-top: 80px;
+    font-family: Arial;
+    color: #435b85;
+    font-size: 30px;
+}
+
+#teams img {
+    width: 146px;
+    height: 70px;
+}
+
+#images {
+    margin-top: 43px;
+    float: left;
+    margin-left: 550px;
+}
+
+#images2 {
+    margin-top: 35px;
+    float: left;
+    margin-left: 891px;
+    padding-bottom: 31px;
+}
+
+#images2 li i {
+    width: 50px;
+    height: 50px;
+    float: left;
+    font-size: 40px;
+    margin-left: -31px;
+    color: #a1a7e4;
+}
+
+#images2 li i:hover {
+    color: white;
+}
+
+footer nav {
+    margin-right: 20vh;
+    margin-top: 50px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 1vh;
+    font-size: 16px;
+    top: 60px;
+    font-weight: 300;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Titillium Web', Lato, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+footer a:hover {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#nav_links {
+    float: left;
+    margin-left: 550px;
+}
+
+section {
+    background-color: #243863;
+    z-index: 2;
+    height: 700px;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+    top: 57px;
+}
+
+section::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(images/background.svg) 0 0 no-repeat;
+    transform: rotate(180deg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+}
+
+section p {
+    font-size: 20px;
+}
+
+#section_txt {
+    z-index: 1;
+}
+
+#tabs {
+    width: 900px;
+    height: 450px;
+    background-color: #333333;
+    z-index: 5;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.btn-try {
+    margin-left: 3px;
+    color: white;
+    background-color: #eb284f;
+    border: 1px solid #eb284f;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 180px;
+    font-weight: 18px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-try:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-managed {
+    width: 300px;
+    height: 46px;
+    text-align: center;
+    background: transparent;
+    border-color: #b7dbfd;
+    color: rgba(255, 255, 255, 0.29);
+    font-weight: 300;
+    margin-left: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid #99bce1;
+    cursor: pointer;
+}
+
+.btn-managed:hover {
+    color: white;
+}
+
+h1 {
+    font-family: 'Helvetica';
+    color: white;
+    margin: 0 0 100px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#stxt {
+    color: #b7dbfd;
+    font-family: 'Helvetica';
+    font-size: 5px;
+    text-align: left;
+    margin-left: 416px;
+}
+
+h2 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.4;
+    font-size: 25px;
+}
+
+#stxt button {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-style: normal;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+.btn-up:hover {
+    color: #eb284f;
+    text-decoration: none;
+    border-bottom: 3px solid #eb284f;
+    padding-bottom: 6px;
+}
+
+.menues {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 200px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+}
+
+.menue1 li {
+    font-size: 100px;
+}
+
+.menu1 {
+    margin-left: 963px;
+    margin-top: 42px;
+}
+
+.menu2 {
+    margin-left: 1059px;
+    margin-top: 42px;
+}
+
+.menues li {
+    text-align: left;
+    display: block;
+    color: #39547e;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-left: -45px;
+}
+
+.menues li:hover {
+    background-color: #4b6cb7;
+    width: 201px;
+    color: white;
+    margin-left: -40px;
+}
+
+.m1:hover .menu1 {
+    display: block;
+}
